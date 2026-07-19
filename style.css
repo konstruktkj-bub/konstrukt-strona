@@ -194,6 +194,19 @@ h1{
   display: block;
 }
 
+/* Na wąskich ekranach cały rysunek robi się nieczytelny w tak niskim pasku —
+   pokazujemy powiększony fragment (ok. połowy szerokości) zamiast ściśniętej całości. */
+@media (max-width: 640px){
+  .blueprint-strip{ overflow: hidden; }
+  .blueprint-strip img{
+    width: 200%;
+    max-width: 200%;
+    height: auto;
+    object-fit: unset;
+    object-position: unset;
+  }
+}
+
 /* =============== SECTION TITLES =============== */
 .section-title{
   font-family: var(--font-display);
