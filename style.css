@@ -188,7 +188,7 @@ h1{
 }
 .blueprint-strip img{
   width: 100%;
-  height: clamp(90px, 12vw, 170px);
+  height: clamp(90px, 14vw, 210px);
   object-fit: cover;
   object-position: center;
   display: block;
