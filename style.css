@@ -88,7 +88,7 @@ a{ color: inherit; text-decoration: none; }
   padding-top: 12px;
   padding-bottom: 12px;
 }
-.brand-mark{ height: 46px; display: block; }
+.brand-mark{ height: 68px; display: block; }
 .header-phone{
   font-family: var(--font-mono);
   font-weight: 600;
@@ -103,7 +103,7 @@ a{ color: inherit; text-decoration: none; }
 .header-phone .dim{ color: var(--gray); font-weight: 500; margin-right: 6px; }
 .header-phone:hover .dim{ color: rgba(255,255,255,.7); }
 @media (max-width: 560px){
-  .brand-mark{ height: 36px; }
+  .brand-mark{ height: 50px; }
   .header-phone{ font-size: 13px; padding: 7px 10px; }
 }
 
@@ -313,5 +313,5 @@ h1{
 /* =============== FOOTER =============== */
 .site-footer{ padding: 32px 0; border-top: 1px solid var(--line); }
 .footer-inner{ display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
-.footer-mark{ height: 30px; opacity: .8; }
+.footer-mark{ height: 42px; opacity: .8; }
 .site-footer p{ margin: 0; font-size: 13px; color: var(--gray); }
