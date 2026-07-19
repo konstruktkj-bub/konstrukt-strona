@@ -170,7 +170,7 @@ h1{
   text-transform: uppercase;
   letter-spacing: .04em;
 }
-.spec-line span:first-child{ color: var(--blue-deep); font-weight: 600; }
+.spec-line span:first-child{ color: var(--blue-deep); font-weight: 600; flex-shrink: 0; }
 .spec-line span:last-child{ text-align: right; }
 
 @media (max-width: 800px){
@@ -180,16 +180,19 @@ h1{
 
 /* =============== BLUEPRINT DIVIDER =============== */
 .blueprint-strip{
-  background: var(--blue-deep);
-  padding: 10px 0;
+  background: #083F91;
+  border-top: 1px solid rgba(255,255,255,.15);
+  border-bottom: 1px solid rgba(255,255,255,.15);
+  overflow: hidden;
+  line-height: 0;
 }
-.blueprint-strip svg{ width: 100%; height: 110px; display: block; }
-.bp-ground{ stroke: rgba(255,255,255,.35); stroke-width: 2; }
-.bp-line{ fill: none; stroke: #fff; stroke-width: 2.5; stroke-linejoin: round; stroke-linecap: round; }
-.bp-line-thin{ fill: none; stroke: rgba(255,255,255,.7); stroke-width: 1.5; }
-.bp-hatch{ fill: rgba(255,255,255,.18); stroke: #fff; stroke-width: 2; }
-.bp-dim line{ stroke: rgba(255,255,255,.55); stroke-width: 1; }
-.bp-dim text{ fill: rgba(255,255,255,.7); font-family: var(--font-mono); font-size: 10px; }
+.blueprint-strip img{
+  width: 100%;
+  height: clamp(90px, 12vw, 170px);
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
 
 /* =============== SECTION TITLES =============== */
 .section-title{

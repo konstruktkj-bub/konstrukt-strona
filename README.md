@@ -9,6 +9,7 @@ Jednostronicowa strona wizytówkowa firmy budowlanej KONSTRUKT, gotowa do publik
 ├── style.css
 ├── script.js
 ├── logo.png
+├── houses-sketch.jpg
 └── README.md
 ```
 
