@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://konstruktkj-bub.github.io/konstrukt-strona/sitemap.xml

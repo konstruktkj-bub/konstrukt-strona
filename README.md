@@ -10,6 +10,8 @@ Jednostronicowa strona wizytówkowa firmy budowlanej KONSTRUKT, gotowa do publik
 ├── script.js
 ├── logo.png
 ├── houses-sketch.jpg
+├── sitemap.xml
+├── robots.txt
 └── README.md
 ```
 
@@ -31,3 +33,15 @@ Masz tam teraz pliki "płasko" (bez folderów `css/`, `js/`, `images/`), dlatego
 - Dane kontaktowe (telefon, e-mail) występują w kilku miejscach w `index.html` — szukaj `603263909` i `konstruktkj@gmail.com`.
 - Kolory i typografię zmienisz w `style.css`, w sekcji `:root` na górze pliku.
 - Logo podmienisz, wgrywając nowy plik o nazwie `logo.png` (ta sama nazwa = nie trzeba nic zmieniać w `index.html`).
+
+## Widoczność w Google
+
+Strona ma już dodane: opisowy tytuł i meta description, dane strukturalne Schema.org (`LocalBusiness`/`GeneralContractor` z telefonem i obszarem działania), tagi Open Graph oraz pliki `sitemap.xml` i `robots.txt`. Samo to jednak nie gwarantuje pojawienia się w wynikach — żeby przyspieszyć indeksację:
+
+1. Wejdź na [Google Search Console](https://search.google.com/search-console).
+2. Dodaj właściwość: `https://konstruktkj-bub.github.io/konstrukt-strona/`.
+3. Zweryfikuj własność (Google zaproponuje metodę — np. tag meta lub plik HTML).
+4. W zakładce **Sitemaps** dodaj adres: `https://konstruktkj-bub.github.io/konstrukt-strona/sitemap.xml`.
+5. Użyj **"Sprawdź adres URL"** i kliknij **"Poproś o zaindeksowanie"**.
+
+Realne pojawienie się w wynikach wyszukiwania to zwykle od kilku dni do kilku tygodni.
